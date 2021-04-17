@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlbumSite</title>
+</head>
+<style>
+    :root {
+  --yellow: #ffc600;
+  --black: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  color: var(--black);
+  
+}
+
+
+*,*:before,*:after {
+  box-sizing: initial;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp3006038.png"),
+    linear-gradient(110deg, #2c2c2c, #c9c9c9);
+  background: size 0 , auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  background-attachment: fixed;
+  letter-spacing: -1px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 5px 0;
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: var(--yellow);
+}
+
+.bg-dark {
+    
+    text-align: center;
+    background: #333;
+    color: #f4f4f4;
+  }
+
+
+
+
+.albums{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.album{
+  background: rgba(250, 250, 250, 0.2);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+.logo{
+    block-size: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+}
+
+.artwork {
+  width: 100%
+}
+
+</style>
+<body>
+
+    <img class="logo" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/001.png" alt="logo">
+    <div class="albums">
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/DSCN5605.JPG">
+        <div class="details">
+          <h2>Flower</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/IMG_20200123_153528-01.jpeg">
+        <div class="details">
+          <h2>Turtle</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">short.</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/LRM_EXPORT_3024069212947_20181231_203327551.jpeg">
+        <div class="details">
+          <h2>Flame</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="C:/Users/HP/Desktop/AlbumSite/photos/LRM_EXPORT_11537034706992_20190813_194135615.jpeg">
+        <div class="details">
+          <h2>Droplet</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/Pic%2002.jpeg">
+        <div class="details">
+          <h2>Tea-bulb</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/Pic01.jpeg">
+        <div class="details">
+          <h2>Squirrels</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/PicsArt_08-21-11.00.47-01.jpeg">
+        <div class="details">
+          <h2>Sunshine</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/Snapchat-1412312193.jpg">
+        <div class="details">
+          <h2>Black Ant</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Desktop/AlbumSite/photos/1618642304434.jpg">
+        <div class="details">
+          <h2>Pink Sky</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+      <div class="album">
+        <img class="artwork" src="file:///C:/Users/HP/Downloads/Pic%2003.jpg">
+        <div class="details">
+          <h2>Shell</h2>
+          <p class="artist">Artist Name : Rupil Narania</p>
+          <p class="desc">moment capture</p>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark">
+      <p>Rupil Website &copy; 2021</p>
+  </footer>
+  
+  </body>
+</html>
